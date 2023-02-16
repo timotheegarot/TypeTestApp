@@ -53,3 +53,12 @@ userInput.addEventListener("input", () => {
     }
   });
 });
+
+function updateTimer() {
+  if (time == 0) {
+    displayResult();
+  }
+  else {
+    document.getElementById("timer").innerText = --time + "s";
+  }
+}
