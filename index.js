@@ -19,7 +19,7 @@ const renderNewQuote = async () => {
 };
 
 userInput.addEventListener("input", () => {
-  let quoteChars = document.querySelectorAll("quote-chars");
+  let quoteChars = document.querySelectorAll(".quote-chars");
   quoteChars = Array.from(quoteChars);
 
   let userInputChars = userInput.value.split("");
