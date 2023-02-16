@@ -80,7 +80,7 @@ const displayResult = () => {
   }
 
   document.getElementById("wpm").innerText = (userInput.value.length / 5 / timeTaken).toFixed(2) + "wpm";
-  document.getElementById("accuracy").innerText = Math.round(((userInput.value.length - mistakes) / userInput.length) * 100) + "%";
+  document.getElementById("accuracy").innerText = Math.round(((userInput.value.length - mistakes) / userInput.value.length) * 100) + "%";
 };
 
 const startTest = () => {
