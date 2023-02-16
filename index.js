@@ -52,4 +52,4 @@ userInput.addEventListener("input", () => {
       displayResult();
     }
   });
-})
+});
