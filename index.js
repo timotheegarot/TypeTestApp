@@ -62,3 +62,8 @@ function updateTimer() {
     document.getElementById("timer").innerText = --time + "s";
   }
 }
+
+const timeReduce = () => {
+  time = 60;
+  timer = setInterval(updateTimer, 1000);
+};
